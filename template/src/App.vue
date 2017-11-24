@@ -31,6 +31,8 @@ export default {
       id: 'mapbox.streets'
     }).addTo(this.map);
 
+    var marker = L.marker([55.710431, 13.208485]).addTo(this.map);
+
   }
 }
 </script>
