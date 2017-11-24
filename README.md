@@ -14,10 +14,15 @@ $ npm install
 $ npm run dev
 ```
 
+```npm install```
+Will install all the dependencies including Vue and Leaflet. It's a lof of files, but don't worry about it. They will be hidden in the node_modules folder in the project root folder.
+
 ```npm run dev```
 
 will start a dev server that uses webpack to minimize all JavaScript into a single file.
 It will also make it possible to use Vue components.
+
+
 
 
 ### What's Included
