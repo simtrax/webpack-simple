@@ -21,11 +21,4 @@ Will install all the dependencies including Vue and Leaflet. It's a lof of files
 Will start a dev server that uses webpack to minimize all JavaScript into a single file.
 It will also make it possible to use Vue components.
 
-
-
-
-### What's Included
-
-- `npm run dev`: Webpack + `vue-loader` with proper config for source maps & hot-reload.
-
-- `npm run build`: build with HTML/CSS/JS minification.
+When the above command is executed your web browser will open a new window pointed at the dev server.

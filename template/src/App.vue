@@ -1,17 +1,36 @@
 <template>
   <div id="app">
-    <h1>\{{ msg }}</h1>
-    <h2>Welcome!</h2>
+    <h1>{{ msg }}</h1>
+    <h2>Here's a map</h2>
+    <div id="mapid"></div>
   </div>
 </template>
 
+
 <script>
 export default {
+
   name: 'app',
+
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App that uses Leaflet!'
+      msg: 'Welcome to Your Vue.js App that uses Leaflet!',
+      map: null,
     }
+  },
+
+  mounted() {
+
+    this.map = L.map('mapid').setView([55.710431, 13.208485], 13);
+
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+      maxZoom: 18,
+      attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+        '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+      id: 'mapbox.streets'
+    }).addTo(this.map);
+
   }
 }
 </script>
@@ -42,5 +61,9 @@ li {
 
 a {
   color: #42b983;
+}
+
+#mapid { 
+  height: 500px; 
 }
 </style>
