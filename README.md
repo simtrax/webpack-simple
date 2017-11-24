@@ -1,24 +1,24 @@
-# webpack-simple
+# simtrax/webpack-simple-leaflet
 
-> A simple Vue 2.0 Webpack & `vue-loader` setup for quick prototyping. Note this template is not suitable for production - for that you may want to wait for an official 2.0 webpack template.
-
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack-simple#1.0 my-project`
+> A simple Vue 2.0 Webpack & `vue-loader` setup for quick prototyping.
 
 > Leaflet is included to give a quick introduction to using Leaflet with Vue
 
-### Pre
-
-### Usage
-
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
+### Getting started
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init simtrax/webpack-simple-leaflet {project name}
-$ cd my-project
+$ vue init simtrax/webpack-simple-leaflet {your project name without squiggly brackets}
+$ cd {your project name without squiggly brackets}
 $ npm install
 $ npm run dev
 ```
+
+```npm run dev```
+
+will start a dev server that uses webpack to minimize all JavaScript into a single file.
+It will also make it possible to use Vue components.
+
 
 ### What's Included
 
